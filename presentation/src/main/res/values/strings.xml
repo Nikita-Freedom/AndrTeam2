@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Alcohol Diary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- Register screen -->
+    <string name="enter_your_email">Введите ваш email:</string>
+    <string name="enter_your_password">Введите ваш пароль:</string>
+    <string name="input">Вход</string>
+    <string name="check_in">Регистрация</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_purpose">Ваша цель</string>
+    <!-- Register screen -->
+
+    <string-array name="options_of_weight">
+        <item>40-50</item>
+        <item>50-60</item>
+        <item>60-70</item>
+        <item>70-80</item>
+        <item>80-90</item>
+        <item>90-100</item>
+        <item>100-110</item>
+        <item>110-120</item>
+    </string-array>
+
+    <string-array name="options_of_growth">
+        <item>140-150</item>
+        <item>150-160</item>
+        <item>160-170</item>
+        <item>170-180</item>
+        <item>180-190</item>
+        <item>190-200</item>
+        <item>210-220</item>
+    </string-array>
+
+    <string-array name="options_of_drinks">
+        <item>Безалкогольное пиво (0.5%)</item>
+        <item>Кефир старше 3х дней (0.7%)</item>
+        <item>Хлебный квас (0.9%)</item>
+        <item>Кумыс (1.2%)</item>
+        <item>Пиво лёгкое (4%)</item>
+        <item>Пиво обычное/Сидр (5%)</item>
+        <item>Пиво портер/тёмное (6%)</item>
+        <item>Слабоалкоголки (7%)</item>
+        <item>Пиво крепкое (8%)</item>
+        <item>Шампанское (10%)</item>
+        <item>Вино (12%)</item>
+        <item>Вермут (15%)</item>
+        <item>Мягкие ликёры (17%)</item>
+        <item>Портвейн (20%)</item>
+        <item>Средние ликёры (20%)</item>
+        <item>Рижский бальзам и т.п. (30%)</item>
+        <item>Крепкие ликёры (35%)</item>
+        <item>Текила/Бренди/Бехеровка и т.п. (38%)</item>
+        <item>Ром/Джин (39%)</item>
+        <item>Водка (40%)</item>
+        <item>Коньяк (40%)</item>
+        <item>Виски/Бурбон/Скотч (%40)</item>
+        <item>Самбука (40%)</item>
+        <item>Абсент лёгкий (60%)</item>
+        <item>Абсент средний (69%)</item>
+        <item>Настойка боярышника (70%)</item>
+        <item>Абсент крепкий (80%)</item>
+        <item>Чистый спирт (95%)</item>
+    </string-array>
+
+    <string-array name="options_of_ml">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+        <item>550</item>
+        <item>600</item>
+        <item>650</item>
+        <item>700</item>
+        <item>750</item>
+        <item>800</item>
+        <item>850</item>
+        <item>900</item>
+        <item>950</item>
+        <item>1000</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ThemeApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00ffffff</item>
+        <item name="colorPrimaryDark">@color/White</item>
+        <item name="colorAccent">@color/colorAccent</item>
+y
+
+    </style>
+
+    <style name="btn_shape_arrow">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+</resources>

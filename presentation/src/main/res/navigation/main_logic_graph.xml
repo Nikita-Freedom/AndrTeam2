@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_logic_graph"
+    app:startDestination="@id/fragmentDaily">
+
+    <fragment
+        android:id="@+id/fragmentDaily"
+        android:name="com.hackaton.andrteam.alcoholdiary.view.report.daily.FragmentDaily"
+        android:label="FragmentDaily"
+        tools:layout="@layout/fragment_daily">
+        <action
+            android:id="@+id/action_fragmentDaily_to_detailDayFragment"
+            app:destination="@id/detailDayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSuggestions"
+        android:name="com.hackaton.andrteam.alcoholdiary.view.report.suggestions.FragmentSuggestion"
+        android:label="FragmentSuggestions"
+        tools:layout="@layout/fragment_suggestion"/>
+
+    <fragment
+        android:id="@+id/detailDayFragment"
+        android:name="com.hackaton.andrteam.alcoholdiary.ui.detailday.DetailDayFragment"
+        android:label="fragment_detail_day"
+        tools:layout="@layout/fragment_detail_day" />
+</navigation>

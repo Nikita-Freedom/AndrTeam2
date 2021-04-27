@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerFragment">
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.hackaton.andrteam.alcoholdiary.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:enterAnim="@anim/anim_left"
+            app:popEnterAnim="@anim/anim_left"
+            app:destination="@id/loginFragment" />
+        <action
+            app:enterAnim="@anim/anim_right"
+            app:popEnterAnim="@anim/anim_right"
+            android:id="@+id/action_registerFragment_to_questionnaireFragment2"
+            app:destination="@id/questionnaireFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hackaton.andrteam.alcoholdiary.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            app:enterAnim="@anim/anim_right"
+            app:popEnterAnim="@anim/anim_right"
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionnaireFragment"
+        android:name="com.hackaton.andrteam.alcoholdiary.QuestionnaireFragment"
+        android:label="fragment_questionnaire"
+        tools:layout="@layout/fragment_questionnaire" >
+        <action
+            app:enterAnim="@anim/anim_right"
+            app:popEnterAnim="@anim/anim_right"
+            android:id="@+id/action_questionnaireFragment_to_selectingGoalFragment"
+            app:destination="@id/selectingGoalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectingGoalFragment"
+        android:name="com.hackaton.andrteam.alcoholdiary.SelectingGoalFragment"
+        android:label="fragment_selecting_goal"
+        tools:layout="@layout/fragment_selecting_goal" >
+        <action
+            android:id="@+id/action_selectingGoalFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        app:enterAnim="@anim/anim_right"
+        app:popEnterAnim="@anim/anim_right"
+        android:id="@+id/detailDayFragment"
+        android:name="com.hackaton.andrteam.alcoholdiary.ui.detailday.DetailDayFragment"
+        android:label="fragment_detail_day"
+        tools:layout="@layout/fragment_detail_day" />
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.hackaton.andrteam.alcoholdiary.NavigationActivity"
+        android:label="activity_main_logic"
+        tools:layout="@layout/activity_main_logic" />
+
+</navigation>

@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.hackaton.andrteam.alcoholdiary"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation project(":domain")
+    implementation project(":data")
+
+    implementation kotlinStdLib
+    implementation appCompat
+    implementation coreKtx
+    implementation material
+    implementation constraint
+
+    //arhitecture components
+    implementation lifecycleExtensions
+    implementation lifecycleKtxViewModel
+    implementation lifecycleKtxRuntime
+    implementation lifecycleKtxLivedata
+
+    //coroutines
+    implementation coroutinesCore
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //fragment
+    implementation navigationFragment
+    implementation navigationUi
+}

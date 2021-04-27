@@ -1,0 +1,51 @@
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+    appCompatVersion = '1.2.0'
+    coroutinesVersion = '1.3.7'
+    materialVersion = '1.2.1'
+    constraintVersion = '2.0.4'
+    coreKtxVersion = '1.3.2'
+    architectureComponents = '2.3.0-beta01'
+    gsonVersion = '2.8.6'
+    kotlinVersion = '1.4.30'
+    retrofitVersion = '2.6.0'
+    navVersion = '2.3.4'
+    roomVersion = '2.2.5'
+}
+
+ext {
+    appCompat = "androidx.appcompat:appcompat:$appCompatVersion"
+
+    coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+    coroutinesViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0-beta01"
+
+    material = "com.google.android.material:material:$materialVersion"
+    constraint = "androidx.constraintlayout:constraintlayout:$constraintVersion"
+    coreKtx = "androidx.core:core-ktx:$coreKtxVersion"
+    kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    lifecycleKtxViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$architectureComponents"
+    lifecycleKtxRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:$architectureComponents"
+    lifecycleKtxLivedata = "androidx.lifecycle:lifecycle-livedata-ktx:$architectureComponents"
+
+    retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    retrofitGson = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    gson = "com.google.code.gson:gson:$gsonVersion"
+
+    navigationFragment = "androidx.navigation:navigation-fragment-ktx:$navVersion"
+    navigationUi = "androidx.navigation:navigation-ui-ktx:$navVersion"
+
+    roomCompiler = "androidx.room:room-compiler:$roomVersion"
+    roomRuntime = "androidx.room:room-runtime:$roomVersion"
+    room = "androidx.room:room-ktx:$roomVersion"
+    Glide = "com.github.bumptech.glide:glide:4.12.0"
+}
